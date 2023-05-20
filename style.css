@@ -7,12 +7,14 @@ body {
 body {
     background: url(./assets/img/left.png) 0% 0% no-repeat fixed,
         url(./assets/img/right.png) 100% 0% no-repeat fixed;
+    background-size: 22%;
 }
 
 .wrapper {
-    min-height: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .header {
@@ -28,7 +30,8 @@ body {
     flex-direction: column;
 }
 
-.title {
+.title,
+.title2 {
     color: #162C4E;
     opacity: 0.39;
     font-size: 72px;
@@ -36,6 +39,11 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     text-align: center;
+    margin: 93px 0 0;
+}
+
+.title2 {
+    display: none;
 }
 
 .subtitle,
@@ -44,6 +52,7 @@ body {
     color: rgba(0, 0, 0, 0.8);
     font-family: 'Poppins', sans-serif;
     text-align: center;
+    margin: 0;
 }
 
 
@@ -63,10 +72,17 @@ body {
     margin-bottom: 76px;
 }
 
+.btn:hover {
+    cursor: pointer;
+}
+
 .date {
     display: flex;
     justify-content: center;
+    margin: 0 0 72px;
 }
+
+
 
 #days,
 #hours,
@@ -75,16 +91,19 @@ body {
     font-size: 72px;
     color: #162C4E;
     font-family: 'Poppins', sans-serif;
-    padding: 10px;
+    padding: 0 10px;
+    margin: 0;
 }
 
 .time-text {
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
-    background: #DF2224;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: url(./assets/img/Vector.png) no-repeat;
+    background-size: cover;
     color: white;
-
+    width: 110px;
+    height: 50px;
+    text-align: center;
 }
 
 .footer {
@@ -111,9 +130,162 @@ body {
 
 .button {
     position: relative;
-    right: 50px;
+    right: 55px;
+    top: 3px;
     border-radius: 100%;
     background-color: #DF2224;
     width: 43px;
     height: 43px;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+@media (max-width: 1200px) {
+    body {
+        background-size: 30%;
+    }
+
+    .title {
+        display: none;
+    }
+
+    .title2 {
+        display: block;
+    }
+
+    .btn {
+        position: relative;
+        left: 40%;
+    }
+}
+
+
+@media (max-width: 767px) {
+    body {
+        background-size: 40% 40%;
+    }
+
+    .title2 {
+        font-size: 60px;
+    }
+
+    #days,
+    #hours,
+    #minutes,
+    #seconds {
+        font-size: 60px;
+        padding: 0 10px;
+    }
+
+    .btn {
+        position: relative;
+        left: 30%;
+    }
+}
+
+@media (max-width: 550px) {
+    body {
+        background-size: 50% 30%;
+    }
+
+    .header {
+        margin-top: 80px;
+    }
+
+    .title2 {
+        font-size: 45px;
+    }
+
+    .subtitle {
+        font-size: 13px;
+    }
+
+    .check {
+        font-size: 13px;
+    }
+
+    #days,
+    #hours,
+    #minutes,
+    #seconds {
+        font-size: 50px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .time-text {
+        font-size: 16px;
+        width: 85px;
+        height: 37px;
+    }
+
+    .btn {
+        position: relative;
+        left: 30%;
+        width: 200px;
+        height: 50px;
+        font-size: 15px;
+    }
+
+    .input {
+        width: 340px;
+
+    }
+
+    .button {
+        position: relative;
+        right: 55px;
+        top: 3px;
+        border-radius: 100%;
+        background-color: #DF2224;
+        width: 43px;
+        height: 43px;
+    }
+}
+
+@media (max-width: 430px) {
+    .title2 {
+        font-size: 40px;
+    }
+
+    #days,
+    #hours,
+    #minutes,
+    #seconds {
+        font-size: 40px;
+        padding: 0 10px;
+    }
+
+    .btn {
+        position: relative;
+        left: 30%;
+        width: 150px;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    .time-text {
+        font-size: 13px;
+        width: 75px;
+        height: 30px;
+    }
+
+    .input {
+        width: 250px;
+        height: 45px;
+    }
+
+    .button {
+        position: relative;
+        right: 45px;
+        top: 3px;
+        width: 33px;
+        height: 33px;
+    }
 }

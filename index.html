@@ -15,18 +15,15 @@
 <body>
     <div class="wrapper">
         <header class="header">
-            <div>
+            <a href="./index.html">
                 <img src="./assets/img/logo.svg" alt="logo">
-            </div>
+            </a>
         </header>
-
-
-
-
 
         <main class="main">
             <div class="title-block">
                 <p class="title">UNDER CONSTRUCTION</p>
+                <p class="title2">UNDER <br>CONSTRUCTION</p>
                 <p class="subtitle">We're making lots of improvements and will be <br> back soon</p>
             </div>
             <div class="date">
@@ -50,19 +47,20 @@
             </div>
             <div class="check">
                 <p>Check our event page when you wait:</p>
-                <button class="btn" type="submit">Go to the event
-                    <img class="arrow-img" src="./assets/img/arrow.png" alt="arrow">
-                </button>
+                <form class="form" action="https://github.com/Krasavceva">
+                    <button class="btn" type="submit">Go to the event
+                        <img class="arrow-img" src="./assets/img/arrow.png" alt="arrow">
+                    </button>
+                </form>
             </div>
         </main>
 
-
-
-
-
         <footer class="footer">
-            <input class="input" type="email" name="footer" id="footer" value="Enter your Email and get notified">
-            <button class="button"><img src="./assets/img/arrow.png" alt="button"></button>
+            <form id="form" action="#">
+                <input class="input" type="email" name="email" id="email"
+                    placeholder="Enter your Email and get notified">
+                <button class="button" type="submit"><img src="./assets/img/arrow.png" alt="button"></button>
+            </form>
         </footer>
     </div>
     <script src="script.js"></script>

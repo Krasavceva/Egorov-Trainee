@@ -1,3 +1,4 @@
+// Счетчик
 const days = document.querySelector('#days');
 const hours = document.querySelector('#hours');
 const minutes = document.querySelector('#minutes');
@@ -27,3 +28,25 @@ function updateCounter() {
 updateCounter()
 
 setInterval(updateCounter, 1000)
+
+
+//Валидация и отправка формы
+
+
+
+// document.addEventListener('DOMContentLoaded', function () {
+//     const form = document.querySelector('#form');
+//     form.addEventListener('submit', formSend);
+
+//     async function formSend(e) {
+//         e.preventDefault();
+
+//         let error = formValidate(form);
+//     }
+//     function formValidate(form) {
+//         let error = 0;
+
+//         if (input)
+//     }
+
+// })
